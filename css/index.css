@@ -1,4 +1,189 @@
-img {
- width: 200px;
- height: 400px;
+/* .center {
+  display: block;
+  margin-left: auto;
+  margin-right: 1em;
+  width: 100%;
+} */
+
+/* li{
+  display: inline;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+}; */
+/* li {
+  display: inline-block;
 }
+ul {
+  left: -1;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+}; */
+h1{
+  font-family: 'Montserrat', sans-serif;
+}
+.project-subhead{
+  color: rebeccapurple;
+  font-family: 'Montserrat', sans-serif;
+}
+.left {
+  text-align: left;
+}
+
+
+
+
+/* .main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  /* font-family: 'Montserrat', sans-serif;
+  transition: margin-left .5s; */
+/* }  */
+
+body{
+  width: 100%;
+}
+
+.cards {
+  /* display: grid; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 37px auto 0;
+  width: calc(280px * 4);
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  justify-content: space-around;
+
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+  background-color: lightpink;
+  box-shadow: 0 3px 10px 0 #aaa;
+  cursor: pointer;
+  height: 500px;
+  position: relative;
+  width: 243px;
+}
+
+.card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card.visited {
+  box-shadow: 0 3px 10px 2px #444;
+}
+
+@media (max-width: 1100px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    width: calc(280px * 2);
+  }
+  .card {
+    margin: 0 auto 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    display: block;
+    width: 100vw;
+  }
+  .card {
+    margin: 0 auto 2rem;
+  }
+}
+#banner-image {
+    background-image: url("/images/Home Banner.png");
+    width: auto ;
+  max-width: 100% ;
+  height: auto ;
+}
+@media screen and (max-width:1284px) {
+  #banner-image {
+    width: auto ;
+  max-width: 100% ;
+  height: auto ;
+}
+}
+
+
+.container {
+  position:relative;
+  width:100%;
+}
+
+.container img {
+  width:100%;
+  height:auto;
+}
+
+.container button {
+  position:absolute;
+  top:65.8%;
+  left:26.5%;
+  font-size: auto;
+  width: 160px;
+  height:30px;
+  text-align:center;
+  background-color: lightgreen;
+  border-color: black;
+  border-style: 20px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.container button:hover{
+  background-color: seagreen;
+  color: white;
+}
+@media screen and (max-width:1284px){
+     button.run-button{
+          left:25%;
+          top: 65%;
+          height: 5%;
+          width:20%;
+          text-align:center;
+          font-size: 11px;
+          font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+       
+     }
+}
+
+
+.flowers {
+  top:60%;
+  float: left;
+  /* right: 60%; */
+  /* float: right; */
+  /* margin: 8px 0 0 20px;
+  padding: 4px; */
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+}
+
+.flowers-1{
+  float: right;
+  margin-right: 2em;
+  /* float: right; */
+  /* padding-left: 1px; */
+  
+  /* float: right; */
+  /* margin: 8px 0 0 20px;
+  padding: 4px; */
+  width: 100px;
+  height: 100px;
+  transform: rotate(-45deg);
+}
+
+
+

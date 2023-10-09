@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <title>My Projects</title>
+   <link rel="stylesheet" type="text/css" href="/css/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="/css/projects.css" />
+  <link rel="stylesheet" type="text/css" href="/css/barChart.css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!--Is linked for the styling of the navigation bar-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+<!--import statements-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.20/angular.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.8.5/echarts.min.js"></script>
+  
+</head>
+<body>
+  <!--Imbedded font for h1 tag because it does not work on css file-->
+  <style>h1{
+  font-family: Montserrat, sans-serif;
+  }</style>
+
+  <!-- <div class="main" style="text-align: right;"> -->
+  <!-- <span class="left" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span> -->
+
+  
+  <!--The pages header-->
+  <!--Navigation bar-->
+  <nav class="navbar"> 
+            <div class="logo"> 
+                <a href="/index.html"> 
+                    <h1>Portfolio Website</h1>
+                </a>  
+            </div> 
+            <div class="hamburger-menu"> 
+                <span class="line"></span> 
+                <span class="line"></span> 
+                <span class="line"></span>  
+            </div> 
+            <div class="nav-menu hide"> 
+                <a href="/index.html">Home</a> 
+                <a href="projects.html">Projects</a> 
+                <a href="/pages/about.html">About</a> 
+                <a href="/pages/contact.html">Contact</a> 
+            </div> 
+        </nav> 
+    
+    </div>
+  <!--Project Tabbed Section-->
+  <div class="container">
+     <!-- Tabs -->
+  <ul id="nav-tab" class="nav">
+    <li class="active"><a href="#powerbi">Power BI</a></li>
+    <li><a href="#powerapp">Power App</a></li>
+    <li><a href="#python">Python & Data</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane active" id="powerbi">
+      <h2>Power BI Dashboards</h2> 
+      <p>For this project I implemented 3 Power BI dashboards: GIS Headcounts, ITAM(IT Asset Management) and Operational Scorecard.</p>
+      
+      <h4>GIS Headcounts Dashboard</h4>
+      <p>To keep track of employee movements for the Global Infrastructure Services team at TIAA, the Headcounts Dashboard includes the total amount of new hires, attritions, FTE employees and Contingent Workers. 
+        <br>Features Implemented: 
+      <ol display: list-item;>
+          <li>Drillthrough Integration</li>
+          <li>Filters</li></ol> </p>
+        
+      <img src="/images/Year (1).png" width="500px" class="center" >
+      <p>For the drillthrough integration (refer to first image at the top for reference) if a user wanted to receive more details on a specific data item. They can right-click on a bar in th stacked bar chart a drillthrough option comes up, when selected the user will be moved to a table that has the specific details on the data chosen. The next feature, which are filters or slicers in Power BI terms, were implemented with a dropdown selection and when a option is clicked the visualization that holds data that are from the same datasource becomes filtered instantly.</p>
+</div>
+    </div>
+    <div class="tab-pane" id="powerapp">
+      <h4>Power App</h4>
+      <p>Leaders need efficient and acccessible technology that can store and showcase metrics that reflect the teams they lead. That is why the Performance Management Portal created with Power Apps is implemented.</p></div>
+    <div class="tab-pane" id="python">
+      <h4>Python & Data</h4>
+      <p>We are used to running the manual process of Data Validation with SQL queries. But with my experience with Python I manage to leverage the productivity with the data validation process. By using a JDBC Oracle driver connection to run SQL queries remotely and implementing an algorithm to store the results to an excel automatically. The process takes just one command line execute the process in seconds instead of long hours.</p>
+    </div>
+  </div>
+</div>
+
+ 
+
+ 
+    <!--Navigation bar-->
+  <script src="/js/navbar.js"></script>
+  <script src="/js/tab.js"></script>
+   <!-- <script src="/js/barChart.js"></script> -->
+  
+  
+
+</body>
+</html>

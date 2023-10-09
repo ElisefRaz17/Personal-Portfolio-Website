@@ -1,9 +1,112 @@
 <!doctype html>
 <html>
 <head>
-<title>Home Page</title>
+<title>Home Page</title> 
+  <link href="pages/navbar.html" rel="import" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Linking Montserrat font for navigation words-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!--Linking Montserrat font for title-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <!--Home screen title-->
 </head>
+  
 <body>
-<img src="images/Home Banner.png" alt="">
+  <!-- <div class="main" style="text-align: right;"> -->
+
+  <div id="main" class="main" style="text-align: center;">
+    <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span> -->
+    <!--Navigation bar-->
+  <nav class="navbar"> 
+            <div class="logo"> 
+                <a href="/index.html"> 
+                    <h1>Portfolio Website</h1>
+                </a>  
+            </div> 
+            <div class="hamburger-menu"> 
+                <span class="line"></span> 
+                <span class="line"></span> 
+                <span class="line"></span>  
+            </div> 
+            <div class="nav-menu hide"> 
+                <a href="./index.html">Home</a> 
+                <a href="./pages/projects.html">Projects</a> 
+                <a href="./pages/about.html">About</a> 
+                <a href="./pages/contact.html">Contact</a> 
+            </div> 
+        </nav> 
+    
+    <div class="container">
+    <img id="banner-image" src="images/Home Banner.png" alt="" >
+      <a href="/pages/projects.html">
+      <button class="run-button" >Run Script</button>
+      </a>
+      </div> <!--this div is for container-->
+    <!-- <img src="images/Home Banner.png" alt="" > -->
+      
+    </div>
+   
+  <!-- <button class="btn">Button</button> -->
+    <!--<img id="banner-image" src="images/Home Banner.png" alt="" width="900" height="500" >  -->
+
+
+
+  <!--Cards for Projects-->
+  <h2 class="project-subhead"style="text-align: center;">My Recent Projects</h2>
+  
+  <img class="flowers" src="images/pink-flower.png">
+  
+  <div class="cards" id="main"  >
+  <div class="card">
+    <img src="images/PowerBI-CardPic.png" alt="..." style="width: 100%;">
+    <!-- <svg width="450" height="160">
+  <rect x="20" y="20" width="200" height="200"
+  style="fill:white;stroke-width:5;fill-opacity:1.0;stroke-opacity:0.9" />
+</svg> -->
+    <div class="card-body" style="text-align: center;">
+      <h2 class="card-title" style="text-align: center;">Power BI Dashboards</h2>
+      <p>
+        See a an overview of dashboards I have created in Power BI. <a href="/pages/projects.html#powerbi">
+          Read more...</a>
+      </p>
+    </div>
+  </div>
+  
+  
+  <div class="card main">
+    <img src="images/PowerAppsCardPic.png" alt="..." style="width: 100%;">
+    <div class="card-body" style="text-align: center;">
+      <h2 class="card-title" style="text-align: center;">Performance Management Power App</h2>
+      <p>
+        This IDE was used to implement a Performance Management Portal for L4 Managers. <a href="/pages/projects.html#powerapp">
+          Read more...</a>
+      </p>
+    </div>
+  </div>
+
+    
+  <div class="card main">
+      <img src="images/QAValidPic.png" alt="..." style="width: 100%;">
+    <div class="card-body" style="text-align: center;">
+      <h2 class="card-title" style="text-align: center;">QA Data Validation w/Python & SQL</h2>
+      <p>
+        Learn how I used Python to simply productivity time with data validation in SQL queries. <a href="/pages/projects.html#python">
+          Read more...</a>
+      </p>
+    </div>
+  </div>
+</div>
+  <img class="flowers-1" src="images/pink-flower.png">
+ 
+
+   <!--JS script for closing and opening side navigation bar-->
+  <script src="js/navbar.js"></script>
 </body>
 </html>
